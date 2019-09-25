@@ -1,0 +1,27 @@
+.card1,
+.card2 {
+  position: absolute;
+  /* border-radius: 5px; */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card1 {
+  min-width: 60vw;
+  min-height: 60vw;
+  width: 1385px;
+  right: 0;
+  background-image: url('./img/moonlight.svg');
+  z-index: -1;
+  top: 0;
+}
+
+.card2 {
+  width: 100vw;
+  height: 80vw;
+  top: 0;
+  background-image: url('./img/star.svg');
+  z-index: -1;
+}

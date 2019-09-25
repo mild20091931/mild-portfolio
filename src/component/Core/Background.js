@@ -19,8 +19,6 @@ const Container = styled.div`
   justify-content: center;
 `
 
-
-
 function Card() {
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 600, friction: 140 } }))
   return (

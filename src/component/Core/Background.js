@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
+import color from './Color';
 import '../../style.css' // // Icons made by Freepik from www.flaticon.com
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
@@ -9,7 +10,7 @@ const trans2 = (x, y) => `translate3d(${x / 8}px,${y / 8 - 100}px,0)`
 
 
 const Bg = styled.div`
-  background-color: #2E3445;
+  background-color: ${color.bg};
   height: 100;
   z-index:-100;
   `

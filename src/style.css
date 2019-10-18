@@ -1,5 +1,5 @@
-.card1,
-.card2 {
+.moonlight,
+.start {
   position: absolute;
   /* border-radius: 5px; */
   background-size: cover;
@@ -8,17 +8,17 @@
   will-change: transform;
 }
 
-.card1 {
+.moonlight {
   min-width: 60vw;
   min-height: 60vw;
-  width: 1385px;
-  right: 0;
+  width: 700px;
+  left: 0px;
   background-image: url('./img/moonlight.svg');
   z-index: -1;
-  top: 0;
+  top: 5;
 }
 
-.card2 {
+.start {
   width: 100vw;
   height: 80vw;
   top: 0;

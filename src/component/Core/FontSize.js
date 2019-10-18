@@ -1,5 +1,5 @@
 export default  {
-  hello: '200px',
+  hello: '150px',
   title:'36px',
   header:'26px',
   subtitle: '18px',

@@ -25,7 +25,7 @@ function Card() {
   return (
     <Bg>
     <Container  onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-      <animated.div class="moonlight" style={{ transform: props.xy.interpolate(trans1) }} />
+      <animated.div class="moonlight"  />
       <animated.div class="start" style={{ transform: props.xy.interpolate(trans2) }} />
     </Container>
     </Bg>

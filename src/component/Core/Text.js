@@ -14,6 +14,11 @@ export const Title = styled.p`
   color: ${color.font};
   line-height:0px;  
 `
+export const Header = styled.p`
+  font-size: ${fontsize.header};
+  color: ${color.font};
+  line-height:0px;  
+`
 
 export const Subtitle = styled.p`
   font-size: ${fontsize.subtitle};

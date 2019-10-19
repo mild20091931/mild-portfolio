@@ -1,38 +1,44 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
-import { Hello } from '../Core/Text';
-import { Box,Flex } from 'rebass'
+import { Hello,Header } from '../Core/Text';
+import { Box,Container,Grid } from '@material-ui/core'
 
 const Img = styled.img`
   width: 50%;
-  /* position:absolute; */
-  display:flex;
-  align-self:center;
-  justify-self:center;
+  margin-left: 5%;
+`
+
+const Welcome = styled(Header)`
+  text-align:right;
+`
+
+const FontText = styled.p`
+  text-align: right;
+  color: #fff;
 `
 
 class index extends Component {
   render() {
     return (
-      <Flex alignItems="center" justifyContent="center" >
-      //look https://styled-system.com/getting-started
-        <Box width={1/4} p={3}/>
-        <Box width={1/2} p={3}>
+      <Grid container direction="row" justify="center" alignItems="center"  >
+        <Grid item lg={6} >
         <Hello>
         <Typewriter
           options={{
-            strings: ['Hello',`I'm`,'Mild.'],
+            strings: ['Hello',`I'm Mild.`],
             autoStart: true,
             loop: true,
           }}
         />
         </Hello>
-        </Box>
-        <Box  width={1/2}>
-          <Img src={'image.png'}/>
-        </Box>
-      </Flex>
+          <Welcome>Welcome to my portfolio</Welcome>
+          <FontText>I'm web developer and I want to be software engineer.</FontText>
+        </Grid>
+        <Grid item lg={6}>
+          <Img src={'profile.png'}/>
+        </Grid>
+      </Grid>
     );
   }
 }

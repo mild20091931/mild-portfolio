@@ -12,7 +12,6 @@ const trans2 = (x, y) => `translate3d(${x / 8}px,${y / 8 - 100}px,0)`
 const Bg = styled.div`
   background-color: ${color.bg};
   height: 100;
-  z-index:-100;
   `
 
 const Container = styled.div`

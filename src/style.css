@@ -1,12 +1,11 @@
 .moonlight,
 .start {
   position: absolute;
-  /* border-radius: 5px; */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   will-change: transform;
-  z-index: 1;
+  /* background-attachment: fixed; */
 }
 
 .moonlight {

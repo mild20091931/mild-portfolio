@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Menu } from '@material-ui/core';
 
 const Nav = styled.nav`
   background-color: #525E65;
@@ -8,7 +7,9 @@ const Nav = styled.nav`
   z-index: 999 !important;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  overflow-x: hidden;
   ul {
     text-align:center;
     padding: 0;
@@ -29,27 +30,38 @@ const Nav = styled.nav`
     cursor: pointer;
     color: #72C9A6;
   }
+  `
+
+const NavStyle = styled.div`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 `
 
-const Navbar = () =>{
-  return (
-    <Nav>
-      <ul>
-        <li>
-          <a href="home">Home</a>
-        </li>
-        <li>
-          <a href="profile">Profile</a>
-        </li>
-        <li>
-          <a href="work">Work Experience</a>
-        </li>
-        <li>
-          <a href="skills">Skills</a>
-        </li>
-      </ul>
-    </Nav>
-  )
+class Navbar extends React.Component{
+  render () {
+    return (
+      <NavStyle>
+      <Nav>
+        <ul>
+          <li>
+            <a href="home">Home</a>
+          </li>
+          <li>
+            <a href="profile">Profile</a>
+          </li>
+          <li>
+            <a href="work">Work Experience</a>
+          </li>
+          <li>
+            <a href="skills">Skills</a>
+          </li>
+        </ul>
+      </Nav>
+      </NavStyle>
+    )
+  }
 }
 
 export default Navbar;

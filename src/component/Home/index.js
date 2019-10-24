@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import { Hello,Header } from '../Core/Text';
-import { Box,Container,Grid } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 const Img = styled.img`
   width: 50%;
@@ -17,11 +17,10 @@ const FontText = styled.p`
   text-align: right;
   color: #fff;
 `
-
 class index extends Component {
   render() {
     return (
-      <Grid container direction="row" justify="center" alignItems="center"  >
+      <React.Fragment>
         <Grid item lg={6} >
         <Hello>
         <Typewriter
@@ -38,7 +37,7 @@ class index extends Component {
         <Grid item lg={6}>
           <Img src={'profile.png'}/>
         </Grid>
-      </Grid>
+      </React.Fragment>
     );
   }
 }

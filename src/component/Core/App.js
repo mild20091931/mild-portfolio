@@ -12,14 +12,7 @@ const Background = styled(Grid)`
   z-index:0;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* margin-top: 12%; */
-  /* position: relative; */
-  /* top: 0; */
   `
-const BgProfile = styled(Grid)`
-  background-color: ${color.bgProfile};
-  height: 100vh;
-`
 
 function App() {
   return (

@@ -106,8 +106,8 @@ componentWillUnmount() {
           <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500} >Home</Link>
           </li>
           <li>
-          </li>
           <Link activeClass="active" className="profile" to="profile" spy={true} smooth={true} duration={500} >Profile</Link>
+          </li>
           <li>
           <Link activeClass="active" className="skills" to="skills" spy={true} smooth={true} duration={500} >Skills</Link>
           </li>

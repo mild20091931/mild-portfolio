@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 180%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #2e3445;
 }
 

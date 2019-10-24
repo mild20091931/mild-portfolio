@@ -14,13 +14,13 @@
   width: 700px;
   left: 0px;
   background-image: url('./img/moonlight.svg');
-  top: 8vh;
+  top: 0px;
 }
 
 .start {
   width: 100vw;
   height: 80vw;
-  top: 30vh;
+  top: 10vh;
   background-image: url('./img/star.svg');
   left: 0px;
 }

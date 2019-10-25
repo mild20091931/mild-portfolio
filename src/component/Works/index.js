@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Grid,ButtonGroup,Container,Button, Box } from '@material-ui/core';
-import { Title,Subtitle } from '../Core/Text';
+import { Grid,Container } from '@material-ui/core';
+import { Title } from '../Core/Text';
 import color from '../Core/Color';
 import Timeline from './Timeline'
-
-const skills = [
-  { text: "React.js" },{ text: "Next.js"},{ text: "styled-components" }, 
-  { text: "Bootstrap" },{ text: "HTML/CSS/JavaScript" },{ text: "Git Command Line" },
-  { text: "axios" },{ text: "Laravel" },{ text: "socket.io" },{ text: "Node.js" },
-  { text: "Basic Ansible" },{ text: "Agile software development Method" },
-  { text: "MVC Pattern" },{ text: "MVC Pattern" },{ text: "SQL" },{ text: "Photoshop" },
-  { text: "illustator" },{ text : "Permiere Pro"},{ text: "Linux Command Line Basic"},
-  { text: "Java"},{ text: "Docker"}
-]
 
 const Btn = styled.div`
   color: ${color.font};

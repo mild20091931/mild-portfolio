@@ -6,6 +6,7 @@ import Bg from './Background';
 import Home from '../Home';
 import Profile from '../Profile';
 import Skills from '../Skills';
+import Works from '../Works';
 
 const Background = styled(Grid)`
   height: 100vh;
@@ -31,6 +32,11 @@ function App() {
       <Container maxWidth="xl" id="skills">
         <Background container direction="row" justify="center" alignItems="center">
           <Skills/>
+        </Background>
+      </Container>
+      <Container maxWidth="xl" id="works">
+        <Background container direction="row" justify="center" alignItems="center">
+          <Works/>
         </Background>
       </Container>
       </Container>

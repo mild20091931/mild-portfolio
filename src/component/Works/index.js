@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Grid,ButtonGroup,Container,Button, Box } from '@material-ui/core';
 import { Title,Subtitle } from '../Core/Text';
-import color from '../Core/Color'
+import color from '../Core/Color';
+import Timeline from './Timeline'
 
 const skills = [
   { text: "React.js" },{ text: "Next.js"},{ text: "styled-components" }, 
@@ -30,6 +31,7 @@ class index extends Component {
         </Grid>
           <Grid item md="12">
             <Grid container direction="row" justify="center" item md="12">
+              <Timeline/>
             </Grid>
         </Grid>
         </Container>

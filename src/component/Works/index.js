@@ -3,14 +3,7 @@ import styled from 'styled-components';
 import { Grid,Container } from '@material-ui/core';
 import { Title } from '../Core/Text';
 import color from '../Core/Color';
-import Timeline from './Timeline'
-
-const Btn = styled.div`
-  color: ${color.font};
-  border: 1px solid #fff;
-  padding: 0.5em;
-  border-radius: 7px;
-`
+import Timeline from './Timeline';
 class index extends Component {
   render() {
     return (

@@ -11,19 +11,18 @@ export const Hello = styled.p`
 
 export const Title = styled.p`
   font-size: ${fontsize.title};
-  color: ${color.font};
+  color: ${color.green};
   line-height:${props => props.lineHeight || '0px'};
   text-align: ${props => props.textAlign || ''};
-  /* text-align: center; */
   `
 export const Header = styled.p`
   font-size: ${fontsize.header};
   color: ${color.font};
-  line-height:0px;  
+  line-height:0px;
   `
 
 export const Subtitle = styled.p`
   font-size: ${fontsize.subtitle};
   color: ${color.font};
-  line-height:${props => props.lineHeight || '0px'};  
+  line-height:${props => props.lineHeight || '0px'};
 `

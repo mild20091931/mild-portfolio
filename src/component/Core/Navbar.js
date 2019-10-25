@@ -44,76 +44,81 @@ class Navbar extends React.Component{
   constructor (props){
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
-}
+  }
 
-componentDidMount() {
-
-  Events.scrollEvent.register('begin', function() {
-    console.log("begin", arguments);
-  });
-
-  Events.scrollEvent.register('end', function() {
-    console.log("end", arguments);
-  });
-
-}
-scrollToTop() {
-  scroller.scrollToTop();
-}
-scrollTo(offset) {
-  scroller.scrollTo('scroll-to-element', {
-    duration: 800,
-    delay: 0,
-    smooth: 'easeInOutQuart',
-    offset: offset
-  })
-}
-scrollToWithContainer() {
-
-  let goToContainer = new Promise((resolve, reject) => {
-
-    Events.scrollEvent.register('end', () => {
-      resolve();
-      Events.scrollEvent.remove('end');
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function() {
+      console.log("begin", arguments);
     });
+    Events.scrollEvent.register('end', function() {
+      console.log("end", arguments);
+    });
+  }
 
-    scroller.scrollTo('scroll-container', {
+  scrollToTop() {
+    scroller.scrollToTop();
+  }
+
+  scrollTo(offset) {
+    scroller.scrollTo('scroll-to-element', {
       duration: 800,
       delay: 0,
-      smooth: 'easeInOutQuart'
+      smooth: 'easeInOutQuart',
+      offset: offset
+    })
+  }
+
+  scrollToWithContainer() {
+    let goToContainer = new Promise((resolve, reject) => {
+      Events.scrollEvent.register('end', () => {
+        resolve();
+        Events.scrollEvent.remove('end');
+      });
+      scroller.scrollTo('scroll-container', {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart'
+      });
     });
 
-  });
-
-  goToContainer.then(() =>  
+    goToContainer.then(() =>
       scroller.scrollTo('scroll-container-second-element', {
-          duration: 800,
-          delay: 0,
-          smooth: 'easeInOutQuart',
-          containerId: 'scroll-container'
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+        containerId: 'scroll-container'
       }));
-}
-componentWillUnmount() {
-  Events.scrollEvent.remove('begin');
-  Events.scrollEvent.remove('end');
-}
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
   render () {
+    const link = [
+      { page : "Home",to : "home" },
+      { page : "Profile",to : "profile" },
+      { page : "Skills",to : "skills" },
+      { page : "Work Experience",to : "works" },
+    ]
     return (
       <NavStyle>
       <Nav>
         <ul>
-          <li>
-          <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500} >Home</Link>
-          </li>
-          <li>
-          <Link activeClass="active" className="profile" to="profile" spy={true} smooth={true} duration={500} >Profile</Link>
-          </li>
-          <li>
-          <Link activeClass="active" className="skills" to="skills" spy={true} smooth={true} duration={500} >Skills</Link>
-          </li>
-          <li>
-          <Link activeClass="active" className="works" to="works" spy={true} smooth={true} duration={500} >Work Experience</Link>
-          </li>
+          {link.map((data,i) => {
+            return (
+              <li key={i}>
+                <Link
+                  activeClass="active"
+                  className="home"
+                  to={data.to}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  >{data.page}
+                </Link>
+            </li>
+            )
+          })}
         </ul>
       </Nav>
       </NavStyle>

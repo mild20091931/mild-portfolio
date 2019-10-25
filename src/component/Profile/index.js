@@ -11,17 +11,17 @@ const contact = [
   {icon : "phone",text: "0956787294",link: "-"},
 ]
 
-const Interests = [{
-  text: "Web Technology",
-  text: "Frontend Technology",
-  text: "Tool for developer",
-  text: "linux"
-}]
+const interests = [
+  { text: "Web Technology" },
+  { text: "Frontend Technology" },
+  { text: "Tool for developer" },
+  { text: "linux" },
+]
 class index extends Component {
   render() {
     return (
     <React.Fragment>
-      <Container maxWidth="md" >
+      <Container maxWidth="md">
         <Grid item md="12">
           <Title>Profile</Title>
           <Subtitle>My name is Tassneewan Noita. My nick name is Mild. I was born 2nd September 1997. I'm 22 year old.</Subtitle>
@@ -31,11 +31,20 @@ class index extends Component {
           <Subtitle>Bachelor of Science (Information Technology), School of Information Technology</Subtitle>
           <Subtitle>King Mongkut’s University of Technology Thonburi (3nd Year)</Subtitle>
         </Grid>
-        <Grid item md="12">
+        <Grid>
           <Title>Interests</Title>
-          <Button variant="outlined" color="white">
-            Disabled
-          </Button>
+          <Grid container direction="row" justify="center" item md="12">
+          {interests.map((data,i) => {
+            console.log(data.text)
+            return(
+              <Box m={2} key={i}>
+                <Button variant="outlined" color="white">
+                  {data.text}
+                </Button>
+              </Box>
+            )
+          })}
+          </Grid>
         </Grid>
         <Grid>
           <Title>Contact</Title>

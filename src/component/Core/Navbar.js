@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, DirectLink, Element , Events, animateScroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Events, scroller } from 'react-scroll'
 
 const Nav = styled.nav`
   background-color: #525E65;

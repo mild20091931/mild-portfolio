@@ -53,7 +53,7 @@ class index extends Component {
     <React.Fragment>
       <Container maxWidth="md">
         <Grid item md="12" justify="center">
-          <Title textAlign='center' lineHeight='30px'>Profile</Title>
+          <Title textAlign='center' lineHeight='40px'>Profile</Title>
           <Subtitle>My name is Tassneewan Noita. My nick name is Mild. I was born 2nd September 1997. I'm 22 year old.</Subtitle>
         </Grid>
         <Hr/>
@@ -62,7 +62,7 @@ class index extends Component {
           <Subtitle lineHeight='22px'>Bachelor of Science (Information Technology), School of Information Technology, King Mongkut’s University of Technology Thonburi (3nd Year)</Subtitle>
         </Grid>
         <Hr/>
-        <Grid item md="12">
+        {/* <Grid item md="12">
           <Header>Interests</Header>
             <Grid container direction="row" justify="center" item md="12">
               {interests.map((data,i) => {
@@ -75,8 +75,8 @@ class index extends Component {
                 )
               })}
             </Grid>
-        </Grid>
-        <Hr/>
+        </Grid> */}
+        {/* <Hr/> */}
         <Grid item md="12">
           <Header>Contact</Header>
             <Grid container direction="row" justify="center" item md="12">

@@ -1,10 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Container,Grid } from '@material-ui/core';
 import Nav from './Navbar';
 import Bg from './Background';
-import Home from '../Home'
-import Profile from '../Profile'
-import styled from 'styled-components'
-import { Container,Grid } from '@material-ui/core'
+import Home from '../Home';
+import Profile from '../Profile';
+import Skills from '../Skills';
 
 const Background = styled(Grid)`
   height: 100vh;
@@ -25,6 +26,11 @@ function App() {
       <Container maxWidth="xl" id="profile">
         <Background container direction="row" justify="center" alignItems="center">
           <Profile/>
+        </Background>
+      </Container>
+      <Container maxWidth="xl" id="skills">
+        <Background container direction="row" justify="center" alignItems="center">
+          <Skills/>
         </Background>
       </Container>
       </Container>

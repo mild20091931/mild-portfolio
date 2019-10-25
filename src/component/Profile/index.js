@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import color from '../Core/Color'
 import { Header,Title,Subtitle } from '../Core/Text';
 import { Grid,ButtonGroup,Container,Button, Box } from '@material-ui/core'
 import { FaGithub,FaFacebook,FaMedium } from "react-icons/fa";
@@ -21,21 +22,21 @@ const interests = [
 ]
 
 const TextIcon = styled.h1`
-  color: #fff;
+  color: ${color.font};
 `
 
 const BtnGroup = styled(ButtonGroup)`
   .MuiButton-root{
-    color: #fff;
+    color: ${color.font};
   }
   `
 const LinkStyle = styled.a`
-  color: #fff;
+  color: ${color.font};
   text-decoration: none;
 `
 
 const Btn = styled.div`
-  color: #fff;
+  color: ${color.font};
   border: 1px solid #fff;
   padding: 0.5em;
   border-radius: 7px;
@@ -43,7 +44,7 @@ const Btn = styled.div`
 
 const Hr = styled.hr`
   width: 10%;
-  background-color: #fff;
+  background-color: ${color.font};
   margin-top: 3%;
 `
 class index extends Component {

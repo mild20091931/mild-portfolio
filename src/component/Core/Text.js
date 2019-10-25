@@ -4,7 +4,7 @@ import color from './Color'
 
 export const Hello = styled.p`
   font-size: ${fontsize.hello};
-  color: ${color.font};
+  color: ${color.green};
   line-height:0px;  
   text-align: right;
 `

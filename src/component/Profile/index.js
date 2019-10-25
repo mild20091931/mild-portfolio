@@ -89,7 +89,7 @@ class index extends Component {
                     <data.icon/>
                   </TextIcon>
                   <Button>
-                    <LinkStyle href={data.link}>
+                    <LinkStyle href={data.link} target="_blank">
                       {data.text}
                     </LinkStyle>
                   </Button>

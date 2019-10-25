@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Header,Title,Subtitle } from '../Core/Text';
 import { Grid,ButtonGroup,Container,Button, Box } from '@material-ui/core'
-import { FaGithub,FaFacebook,FaMedium } from "react-icons/fa"; 
-import { IoIosMail,IoIosPhonePortrait } from "react-icons/io"; 
+import { FaGithub,FaFacebook,FaMedium } from "react-icons/fa";
+import { IoIosMail,IoIosPhonePortrait } from "react-icons/io";
 
 const contact = [
-  {icon : IoIosMail,text : "tassaneewan.mild@mail.kmutt.ac.th" ,link: "https://github.com/mild20091931"},
+  {icon : IoIosMail,text : "tassaneewan.mild@mail.kmutt.ac.th" ,link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=tassaneewan.mild@mail.kmutt.ac.th&tf=1"},
   {icon : FaGithub ,text : "github.com/mild20091931" ,link: "https://github.com/mild20091931"},
   {icon : FaFacebook,text: "facebook.com/mmmild1",link: "https://www.facebook.com/mmmild1"},
   {icon : FaMedium,text : "medium.com/@mild20091931",link: "https://medium.com/@mild20091931"},
@@ -28,7 +28,12 @@ const BtnGroup = styled(ButtonGroup)`
   .MuiButton-root{
     color: #fff;
   }
+  `
+const LinkStyle = styled.a`
+  color: #fff;
+  text-decoration: none;
 `
+
 const Btn = styled.div`
   color: #fff;
   border: 1px solid #fff;
@@ -82,7 +87,11 @@ class index extends Component {
               <TextIcon>
                 <data.icon/>
               </TextIcon>
-              <Button>{data.text}</Button>
+              <Button>
+                <LinkStyle href={data.link}>
+                  {data.text}
+                </LinkStyle>
+              </Button>
             </BtnGroup>
             </Grid>
             </Box>

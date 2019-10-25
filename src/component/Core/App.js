@@ -3,9 +3,8 @@ import Nav from './Navbar';
 import Bg from './Background';
 import Home from '../Home'
 import Profile from '../Profile'
-import color from './Color'
 import styled from 'styled-components'
-import { Container,Box,Grid } from '@material-ui/core'
+import { Container,Grid } from '@material-ui/core'
 
 const Background = styled(Grid)`
   height: 100vh;

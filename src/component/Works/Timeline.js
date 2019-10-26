@@ -3,9 +3,10 @@ import color from '../Core/Color'
 import { Container,Grid } from '@material-ui/core';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaBriefcase, FaThumbsUp } from 'react-icons/fa';
-import { Title,Subtitle,Header } from '../Core/Text';
+import { FaBriefcase } from 'react-icons/fa';
+import { Subtitle,Header } from '../Core/Text';
 import Carousel from '../Core/Carousel';
+
 
 const skooldio = [
   {img: "skl_01.jpg"},
@@ -13,35 +14,32 @@ const skooldio = [
   {img: "skl_03.jpg"},
   {img: "skl_04.png"},
 ]
+const timelineElement = [
+  {header : "Ask #4.0", subtitle : "I'm developing ask #4.0", carousel: 'none'},
+  {header : "Internship Skooldio 2019" , subtitle : "I was internship at skooldio", carousel: skooldio},
+]
 class Timeline extends Component {
   render() {
     return (
       <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: color.bgSkills, color: '#fff' }}
-          contentArrowStyle={{ borderRight: `7px solid #525E65` }}
-          date="present"
-          iconStyle={{ background: '#72C9A6', color: '#fff' }}
-          icon={<FaBriefcase />}
-        >
-          <Header>Ask #4.0</Header>
-          <Subtitle>I'm developing ask #4.0</Subtitle>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: color.bgSkills, color: '#fff' }}
-          contentArrowStyle={{ borderRight: `7px solid #525E65` }}
-          date="03/05/2019 - 31/07/2019"
-          iconStyle={{ background: '#72C9A6', color: '#fff' }}
-          icon={<FaThumbsUp />}
-        >
-        <Container maxWidth="md">
-          <Title>Internship Skooldio 2019</Title>
-          <Subtitle>I was internship at skooldio</Subtitle>
-          <Carousel pic={skooldio}/>
-        </Container>
-        </VerticalTimelineElement>
+          {timelineElement.map((data,i) => {
+            return (
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: color.bgSkills, color: '#fff' }}
+                contentArrowStyle={{ borderRight: `7px solid #525E65` }}
+                date="present"
+                iconStyle={{ background: '#72C9A6', color: '#fff' }}
+                icon={<FaBriefcase />}
+              >
+              <Container maxWidth="md">
+                <Header>{data.header}</Header>
+                <Subtitle>{data.subtitle}</Subtitle>
+                {data.carousel !== 'none' ? <Carousel pic={data.carousel}/>:''}
+              </Container>
+              </VerticalTimelineElement>
+            )
+          })}
       </VerticalTimeline>
     );
   }

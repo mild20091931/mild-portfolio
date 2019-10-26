@@ -18,9 +18,11 @@ export const Header = styled.p`
   font-size: ${fontsize.header};
   color: ${color.font};
   line-height:${props => props.lineHeight || '0px'};
+  text-align: ${props => props.textAlign || ''};
   `
 export const Subtitle = styled.p`
   font-size: ${fontsize.subtitle};
   color: ${color.font};
   line-height:${props => props.lineHeight || '0px'};
+  text-align: ${props => props.textAlign || ''};
 `

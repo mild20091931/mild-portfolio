@@ -11,6 +11,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.2",
     "react-scroll": "^1.7.14",
+    "react-slick": "^0.25.2",
     "react-spring": "^8.0.27",
     "react-vertical-timeline-component": "^2.5.0",
     "rebass": "^4.0.6",

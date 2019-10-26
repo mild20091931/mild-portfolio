@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Grid,ButtonGroup,Container,Button, Box } from '@material-ui/core';
-import { Title,Subtitle } from '../Core/Text';
+import { Grid,Container,Box } from '@material-ui/core';
+import { Title,Header } from '../Core/Text';
 import color from '../Core/Color'
 
 const skills = [
   { text: "React.js" },{ text: "Next.js"},{ text: "styled-components" }, 
   { text: "Bootstrap" },{ text: "HTML/CSS/JavaScript" },{ text: "Git Command Line" },
   { text: "axios" },{ text: "Laravel" },{ text: "socket.io" },{ text: "Node.js" },
-  { text: "Basic Ansible" },{ text: "Agile software development Method" },
+  { text: "Basic Ansible" },{ text: "Agile software development Method" },{ text: "TDD" },
   { text: "MVC Pattern" },{ text: "MVC Pattern" },{ text: "SQL" },{ text: "Photoshop" },
   { text: "illustator" },{ text : "Permiere Pro"},{ text: "Linux Command Line Basic"},
   { text: "Java"},{ text: "Docker"}
@@ -26,7 +26,8 @@ class index extends Component {
       <React.Fragment>
         <Container maxWidth="md">
         <Grid item md="12" justify="center">
-          <Title textAlign='center' lineHeight='30px'>Skills</Title>
+          <Title textAlign='center'>Skills</Title>
+          <Header textAlign='center'>This is my skills,I think I love it.</Header>
         </Grid>
           <Grid item md="12">
             <Grid container direction="row" justify="center" item md="12">

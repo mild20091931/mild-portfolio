@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
-import { Hello,Header } from '../Core/Text';
+import { Hello,Subtitle } from '../Core/Text';
 import { Grid } from '@material-ui/core'
 
 const Img = styled.img`
@@ -9,7 +9,7 @@ const Img = styled.img`
   margin-left: 5%;
 `
 
-const Welcome = styled(Header)`
+const Welcome = styled(Subtitle)`
   text-align:right;
 `
 

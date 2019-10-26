@@ -54,12 +54,12 @@ class index extends Component {
       <Container maxWidth="md">
         <Grid item md="12" justify="center">
           <Title textAlign='center' lineHeight='40px'>Profile</Title>
-          <Subtitle>My name is Tassneewan Noita. My nick name is Mild. I was born 2nd September 1997. I'm 22 year old.</Subtitle>
+          <Header>My name is Tassneewan Noita. My nick name is Mild. I was born 2nd September 1997. I'm 22 year old.</Header>
         </Grid>
         <Hr/>
         <Grid item md="12">
-          <Header lineHeight='10px'>Education</Header>
-          <Subtitle lineHeight='22px'>Bachelor of Science (Information Technology), School of Information Technology, King Mongkut’s University of Technology Thonburi (3nd Year)</Subtitle>
+          <Subtitle lineHeight='0px'>Education</Subtitle>
+          <Header lineHeight='22px'>Bachelor of Science (Information Technology), School of Information Technology, King Mongkut’s University of Technology Thonburi (3nd Year)</Header>
         </Grid>
         <Hr/>
         {/* <Grid item md="12">
@@ -78,7 +78,7 @@ class index extends Component {
         </Grid> */}
         {/* <Hr/> */}
         <Grid item md="12">
-          <Header>Contact</Header>
+          <Subtitle>Contact</Subtitle>
             <Grid container direction="row" justify="center" item md="12">
               {contact.map((data,i) => {
                 return (

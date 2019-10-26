@@ -5,7 +5,7 @@ import color from './Color';
 import '../../style.css' // // Icons made by Freepik from www.flaticon.com
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
+// const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
 const trans2 = (x, y) => `translate3d(${x / 8}px,${y / 8 - 100}px,0)`
 
 

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { Grid,Container } from '@material-ui/core';
 import { Title,Header } from '../Core/Text';
-import color from '../Core/Color';
 import Timeline from './Timeline';
 class index extends Component {
   render() {

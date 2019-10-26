@@ -21,7 +21,7 @@ class Carousel extends Component {
         <Slider {...settings}>
           {pic.map((data,i) => {
             return (
-              <Img src={'/img/protoForPortfolio/'+`${data.img}`}/>
+              <Img key={i} src={`/img/protoForPortfolio/${data.img}`}/>
             )
           })
           }

@@ -14,12 +14,12 @@ const contact = [
   {icon : IoIosPhonePortrait,text: "0956787294",link: "-"},
 ]
 
-const interests = [
-  { text: "#Web Technology" },
-  { text: "#Frontend Technology" },
-  { text: "#Tool for developer" },
-  { text: "#Linux Command Line" },
-]
+// const interests = [
+//   { text: "#Web Technology" },
+//   { text: "#Frontend Technology" },
+//   { text: "#Tool for developer" },
+//   { text: "#Linux Command Line" },
+// ]
 
 const TextIcon = styled.h1`
   color: ${color.font};
@@ -33,13 +33,6 @@ const BtnGroup = styled(ButtonGroup)`
 const LinkStyle = styled.a`
   color: ${color.font};
   text-decoration: none;
-`
-
-const Btn = styled.div`
-  color: ${color.font};
-  border: 1px solid #fff;
-  padding: 0.5em;
-  border-radius: 7px;
 `
 
 const Hr = styled.hr`

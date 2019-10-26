@@ -31,7 +31,7 @@ class index extends Component {
           }}
         />
         </Hello>
-          <Welcome>Welcome to my portfolio</Welcome>
+          <Welcome>Welcome to my resume</Welcome>
           <FontText>I'm web developer and I want to be software engineer.</FontText>
         </Grid>
         <Grid item lg={6}>

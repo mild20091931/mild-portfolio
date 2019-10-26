@@ -6,14 +6,7 @@ const Img = styled.img`
   width: 100%;
   height: 20%;
 `
-
-
 class Carousel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { pic : this.props.pic}
-  }
-
   render() {
     const settings = {
       dots: true,

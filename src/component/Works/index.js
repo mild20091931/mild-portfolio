@@ -8,11 +8,11 @@ class index extends Component {
   render() {
     return (
       <React.Fragment>
-        <Container maxWidth="md">
+        <Container maxWidth="ls">
         <Grid item md="12" justify="center">
           <Title textAlign='center' lineHeight='30px'>Work Experience</Title>
         </Grid>
-          <Grid item md="12">
+          <Grid item ls="12">
             <Grid container direction="row" justify="center" item md="12">
               <Timeline/>
             </Grid>

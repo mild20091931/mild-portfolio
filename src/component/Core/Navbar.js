@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, Events, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Nav = styled.nav`
   background-color: #525E65;
   height: 8vh;
-  z-index: 999 !important;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -27,6 +26,9 @@ const Nav = styled.nav`
     width: 150px;
     transition: 0.4s;
   }
+  li a:active {
+    color: #72C9A6;
+  }
   li a:hover {
     cursor: pointer;
     color: #72C9A6;
@@ -41,58 +43,11 @@ const NavStyle = styled.div`
 `
 
 class Navbar extends React.Component{
-  constructor (props){
-    super(props);
-    this.scrollToTop = this.scrollToTop.bind(this);
+
+  handleSetActive (to) {
+    console.log(to);
   }
 
-  componentDidMount() {
-    Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
-    });
-    Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
-    });
-  }
-
-  scrollToTop() {
-    scroller.scrollToTop();
-  }
-
-  scrollTo(offset) {
-    scroller.scrollTo('scroll-to-element', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-      offset: offset
-    })
-  }
-
-  scrollToWithContainer() {
-    let goToContainer = new Promise((resolve, reject) => {
-      Events.scrollEvent.register('end', () => {
-        resolve();
-        Events.scrollEvent.remove('end');
-      });
-      scroller.scrollTo('scroll-container', {
-        duration: 800,
-        delay: 0,
-        smooth: 'easeInOutQuart'
-      });
-    });
-
-    goToContainer.then(() =>
-      scroller.scrollTo('scroll-container-second-element', {
-        duration: 800,
-        delay: 0,
-        smooth: 'easeInOutQuart',
-        containerId: 'scroll-container'
-      }));
-  }
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
   render () {
     const link = [
       { page : "Home",to : "home" },
@@ -109,12 +64,14 @@ class Navbar extends React.Component{
               <li key={i}>
                 <Link
                   activeClass="active"
-                  className="home"
+                  className={data.to}
                   to={data.to}
                   spy={true}
-                  smooth={true}
-                  duration={500}
-                  >{data.page}
+                  smooth={'easeInOutCubic'}
+                  duration={1000}
+                  onSetActive={this.handleSetActive}
+                  >
+                    {data.page}
                 </Link>
             </li>
             )

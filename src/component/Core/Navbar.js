@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 const Nav = styled.nav`
-  background-color: #525E65;
+  background-color: #525e65;
   height: 8vh;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ const Nav = styled.nav`
   z-index: 1;
   overflow-x: hidden;
   ul {
-    text-align:center;
+    text-align: center;
     padding: 0;
   }
   li {
@@ -27,59 +27,54 @@ const Nav = styled.nav`
     transition: 0.4s;
   }
   li a:active {
-    color: #72C9A6;
+    color: #72c9a6;
   }
   li a:hover {
     cursor: pointer;
-    color: #72C9A6;
+    color: #72c9a6;
   }
-  `
+`;
 
 const NavStyle = styled.div`
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
-`
+`;
 
-class Navbar extends React.Component{
-
-  handleSetActive (to) {
-    console.log(to);
-  }
-
-  render () {
+class Navbar extends React.Component {
+  render() {
     const link = [
-      { page : "Home",to : "home" },
-      { page : "Profile",to : "profile" },
-      { page : "Skills",to : "skills" },
-      { page : "Work Experience",to : "works" },
-    ]
+      { page: 'Home', to: 'home' },
+      { page: 'Profile', to: 'profile' },
+      { page: 'Skills', to: 'skills' },
+      { page: 'Work Experience', to: 'works' },
+    ];
     return (
       <NavStyle>
-      <Nav>
-        <ul>
-          {link.map((data,i) => {
-            return (
-              <li key={i}>
-                <Link
-                  activeClass="active"
-                  className={data.to}
-                  to={data.to}
-                  spy={true}
-                  smooth={'easeInOutCubic'}
-                  duration={1000}
-                  onSetActive={this.handleSetActive}
+        <Nav>
+          <ul>
+            {link.map((data, i) => {
+              return (
+                <li key={i}>
+                  <Link
+                    activeClass="active"
+                    className={data.to}
+                    to={data.to}
+                    spy={true}
+                    smooth={'easeInOutCubic'}
+                    duration={1000}
+                    onSetActive={this.handleSetActive}
                   >
                     {data.page}
-                </Link>
-            </li>
-            )
-          })}
-        </ul>
-      </Nav>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </Nav>
       </NavStyle>
-    )
+    );
   }
 }
 

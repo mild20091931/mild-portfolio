@@ -10,7 +10,7 @@ import styled from 'styled-components';
 const contact = [
   {icon : IoIosMail,text : "tassaneewan.mild@mail.kmutt.ac.th" ,link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=tassaneewan.mild@mail.kmutt.ac.th&tf=1"},
   {icon : FaGithub ,text : "github.com/mild-tn" ,link: "https://github.com/mild-tn"},
-  {icon : FaFacebook,text: "facebook.com/mmmild1",link: "https://www.facebook.com/mmmild1"},
+  {icon : FaFacebook,text: "facebook.com/mild.tn",link: "https://www.facebook.com/mmmild1"},
   {icon : FaMedium,text : "medium.com/@mild20091931",link: "https://medium.com/@mild20091931"},
   {icon : IoIosPhonePortrait,text: "0956787294",link: "-"},
   {icon : FaLinkedin,text: "@mild-tn",link: "https://www.linkedin.com/in/mild-tn"},

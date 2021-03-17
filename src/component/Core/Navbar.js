@@ -1,12 +1,23 @@
 import { Link } from 'react-scroll';
 import React from 'react';
 import styled from 'styled-components';
+import { FaGithub } from "react-icons/fa";
+
+const TextIcon = styled.h1`
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin: 0px;
+`
 
 const Nav = styled.nav`
-  background-color: #525e65;
-  height: 8%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
+  max-width: 1024px;
   width: 100%;
   z-index: 1;
   overflow-x: hidden;
@@ -39,6 +50,9 @@ const NavStyle = styled.div`
   position: fixed;
   width: 100%;
   top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #525e65;
   z-index: 1;
 `;
 
@@ -72,6 +86,11 @@ class Navbar extends React.Component {
               );
             })}
           </ul>
+          <a href="https://github.com/mild-tn" target="_blank">
+            <TextIcon>
+              <FaGithub />
+            </TextIcon>
+          </a>
         </Nav>
       </NavStyle>
     );

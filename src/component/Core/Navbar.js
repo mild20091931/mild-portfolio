@@ -86,7 +86,7 @@ class Navbar extends React.Component {
               );
             })}
           </ul>
-          <a href="https://github.com/mild-tn" target="_blank">
+          <a href="https://github.com/mild-tn">
             <TextIcon>
               <FaGithub />
             </TextIcon>

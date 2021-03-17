@@ -17,6 +17,11 @@ const codemania = [
   { img: 'codemania_03.jpg' },
 ];
 
+const prontotools = [
+  { img: 'pronto_01.JPG' },
+  { img: 'pronto_02.JPG' },
+]
+
 const py = [{ img: 'Py_01.jpg' }, { img: 'Py_02.jpg' }, { img: 'Py_03.jpg' }, { img: 'Py_04.jpg' }];
 
 const awsBuildOnThailand = [
@@ -122,7 +127,7 @@ export const timelineElement = [
     date: '01/2020 - 06/2020',
     header: "Internship at Pronto Tools 2020",
     subtitle: 'I was an internship at Pronto Tools. I worked as a Software Engineer. ',
-    carousel: 'none',
+    carousel: prontotools,
     repo: 'https://github.com/mild20091931/pyladies-web.git',
     stack: 'HTML | CSS | JavaScript | Python | Django | AWS Lambda | AWS API Gateway | AWS DynamoDB',
     web: 'https://pyladiesbkk.netlify.com',
@@ -140,7 +145,7 @@ export const timelineElement = [
   {
     icon: <MdSettings />,
     date: 'Present',
-    header: 'Senior Project',
+    header: 'Senior Project: SIT Industry Collaboration Service System',
     subtitle: "The Student of Information Technology Faculty can apply their interesting jobs  by SIT Industry Collaboration Service System.",
     carousel: 'none',
     repo: 'https://github.com/SIT-Careers-Project',

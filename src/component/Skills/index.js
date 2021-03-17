@@ -6,13 +6,13 @@ import color from '../Core/Color'
 import styled from 'styled-components';
 
 const skills = [
-    "React.js", "Next.js","styled-components","Bootstrap",
-    "HTML/CSS/JavaScript" ,"Git Command Line", "axios" ,"Laravel" ,
-    "socket.io" ,"Node.js", "Basic Ansible" ,"Agile Software Development Method" ,
-    "TDD","MVC Pattern" ,"MVC Pattern" ,"SQL" ,"PhotoShop",
-    "illustrator","Premiere Pro","Linux Command Line Basic",
-    "Java","Docker", "Python", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB",
-    "Google Could Shell", "tailwind", "Material-UI", "Django",
+  "React.js", "Next.js","styled-components","Bootstrap",
+  "HTML/CSS/JavaScript" ,"Git Command Line", "axios" ,"Laravel" ,
+  "socket.io" ,"Node.js", "Basic Ansible" ,"Agile Software Development Method" ,
+  "TDD","MVC Pattern" ,"MVC Pattern" ,"SQL" ,"PhotoShop",
+  "illustrator","Premiere Pro","Linux Command Line Basic",
+  "Java","Docker", "Python", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB",
+  "Google Could Shell", "tailwind", "Material-UI", "Django",
 ]
 
 const Btn = styled.div`

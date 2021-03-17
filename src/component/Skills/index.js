@@ -1,17 +1,18 @@
+import { Box, Container, Grid } from '@material-ui/core';
+import { Header, Title } from '../Core/Text';
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import { Grid,Container,Box } from '@material-ui/core';
-import { Title,Header } from '../Core/Text';
+
 import color from '../Core/Color'
+import styled from 'styled-components';
 
 const skills = [
-  { text: "React.js" },{ text: "Next.js"},{ text: "styled-components" }, 
-  { text: "Bootstrap" },{ text: "HTML/CSS/JavaScript" },{ text: "Git Command Line" },
-  { text: "axios" },{ text: "Laravel" },{ text: "socket.io" },{ text: "Node.js" },
-  { text: "Basic Ansible" },{ text: "Agile software development Method" },{ text: "TDD" },
-  { text: "MVC Pattern" },{ text: "MVC Pattern" },{ text: "SQL" },{ text: "Photoshop" },
-  { text: "illustator" },{ text : "Permiere Pro"},{ text: "Linux Command Line Basic"},
-  { text: "Java"},{ text: "Docker"}
+    "React.js", "Next.js","styled-components","Bootstrap",
+    "HTML/CSS/JavaScript" ,"Git Command Line", "axios" ,"Laravel" ,
+    "socket.io" ,"Node.js", "Basic Ansible" ,"Agile Software Development Method" ,
+    "TDD","MVC Pattern" ,"MVC Pattern" ,"SQL" ,"PhotoShop",
+    "illustrator","Premiere Pro","Linux Command Line Basic",
+    "Java","Docker", "Python", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB",
+    "Google Could Shell", "tailwind", "Material-UI", "Django",
 ]
 
 const Btn = styled.div`
@@ -35,7 +36,7 @@ class index extends Component {
                 return(
                   <Box m={2} key={i}>
                     <Btn>
-                      {data.text}
+                      {data}
                     </Btn>
                   </Box>
                 )

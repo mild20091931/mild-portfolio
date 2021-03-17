@@ -1,10 +1,11 @@
+import { Box, Button, ButtonGroup, Container, Grid } from '@material-ui/core'
+import { FaFacebook, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+import { Header, Subtitle, Title } from '../Core/Text';
+import { IoIosMail, IoIosPhonePortrait } from "react-icons/io";
 import React, { Component } from 'react';
-import styled from 'styled-components';
+
 import color from '../Core/Color'
-import { Header,Title,Subtitle } from '../Core/Text';
-import { Grid,ButtonGroup,Container,Button, Box } from '@material-ui/core'
-import { FaGithub,FaFacebook,FaMedium } from "react-icons/fa";
-import { IoIosMail,IoIosPhonePortrait } from "react-icons/io";
+import styled from 'styled-components';
 
 const contact = [
   {icon : IoIosMail,text : "tassaneewan.mild@mail.kmutt.ac.th" ,link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=tassaneewan.mild@mail.kmutt.ac.th&tf=1"},
@@ -12,6 +13,7 @@ const contact = [
   {icon : FaFacebook,text: "facebook.com/mmmild1",link: "https://www.facebook.com/mmmild1"},
   {icon : FaMedium,text : "medium.com/@mild20091931",link: "https://medium.com/@mild20091931"},
   {icon : IoIosPhonePortrait,text: "0956787294",link: "-"},
+  {icon : FaLinkedin,text: "@mild-tn",link: "https://www.linkedin.com/in/mild-tn"},
 ]
 
 // const interests = [
@@ -55,21 +57,6 @@ class index extends Component {
           <Header lineHeight='22px'>Bachelor of Science (Information Technology), School of Information Technology, King Mongkut’s University of Technology Thonburi (3nd Year)</Header>
         </Grid>
         <Hr/>
-        {/* <Grid item md="12">
-          <Header>Interests</Header>
-            <Grid container direction="row" justify="center" item md="12">
-              {interests.map((data,i) => {
-                return(
-                  <Box m={2} key={i}>
-                    <Btn>
-                      {data.text}
-                    </Btn>
-                  </Box>
-                )
-              })}
-            </Grid>
-        </Grid> */}
-        {/* <Hr/> */}
         <Grid item md="12">
           <Subtitle>Contact</Subtitle>
             <Grid container direction="row" justify="center" item md="12">

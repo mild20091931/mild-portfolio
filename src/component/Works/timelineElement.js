@@ -149,7 +149,7 @@ export const timelineElement = [
     subtitle: "The Student of Information Technology Faculty can apply their interesting jobs  by SIT Industry Collaboration Service System.",
     carousel: 'none',
     repo: 'https://github.com/SIT-Careers-Project',
-    stack: 'NEXTJS | Laravel | Tailwind',
+    stack: 'NEXTJS + TypeScript | Tailwind | MobX | Laravel',
     web: 'https://dev.sit-industry.systems/',
   },
 ];

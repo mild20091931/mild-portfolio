@@ -1,10 +1,10 @@
+import { Link } from 'react-scroll';
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
 
 const Nav = styled.nav`
   background-color: #525e65;
-  height: 8vh;
+  height: 8%;
   margin: 0;
   padding: 0;
   width: 100%;

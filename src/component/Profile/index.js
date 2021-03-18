@@ -49,12 +49,12 @@ class index extends Component {
       <Container maxWidth="md">
         <Grid item md="12" justify="center">
           <Title textAlign='center' lineHeight='40px'>Profile</Title>
-          <Header>My name is Tassneewan Noita. My nick name is Mild. I was born 2nd September 1997. I'm 22 year old.</Header>
+          <Header>My name is Tassneewan Noita. My nick name is Mild. I was born 2nd September 1997. I'm 23 year old.</Header>
         </Grid>
         <Hr/>
         <Grid item md="12">
           <Subtitle lineHeight='0px'>Education</Subtitle>
-          <Header lineHeight='22px'>Bachelor of Science (Information Technology), School of Information Technology, King Mongkut’s University of Technology Thonburi (3nd Year)</Header>
+          <Header lineHeight='22px'>Bachelor of Science (Information Technology), School of Information Technology, King Mongkut’s University of Technology Thonburi (4nd Year)</Header>
         </Grid>
         <Hr/>
         <Grid item md="12">

@@ -32,7 +32,7 @@ class index extends Component {
         />
         </Hello>
           <Welcome>Welcome to my resume</Welcome>
-          <FontText>I'm web developer and I want to be software engineer.</FontText>
+          <FontText>I am passionate and enjoy software development.</FontText>
         </Grid>
         <Grid item lg={6}>
           <Img src={'profile.png'}/>

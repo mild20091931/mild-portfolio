@@ -12,11 +12,17 @@ const trans2 = (x, y) => `translate3d(${x / 8}px,${y / 8 - 100}px,0)`
 const Bg = styled.div`
   background-color: ${color.bg};
   height: 100%;
+  @media only screen and (max-width: 769px) {
+    visibility: hidden;
+  }
   `
 
 const Container = styled.div`
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 769px) {
+    visibility: hidden;
+  }
 `
 
 function Card() {
@@ -24,8 +30,8 @@ function Card() {
   return (
     <Bg>
     <Container  onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-      <animated.div class="moonlight" />
-      <animated.div class="start" style={{ transform: props.xy.interpolate(trans2) }} />
+      <animated.div className="moonlight" />
+      <animated.div className="start" style={{ transform: props.xy.interpolate(trans2) }} />
     </Container>
     </Bg>
   )

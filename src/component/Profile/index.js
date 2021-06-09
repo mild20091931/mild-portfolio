@@ -48,10 +48,10 @@ class index extends Component {
     <React.Fragment>
       <Container maxWidth="md">
         <Grid item md="12" justify="center">
-          <Title textAlign='center' lineHeight='40px'>Profile</Title>
-          <Header lineHeight='10px' textAlign="center">My name is Tassneewan Noita. My nick name is Mild who love coding and ready to learn everything. </Header>
-          <Header lineHeight='10px' textAlign="center">I'm studying 4th student of Bachelor of Science (Information Technology), School of Information Technology,</Header>
-          <Header lineHeight='10px' textAlign="center">King Mongkut’s University of Technology Thonburi.</Header>
+          <Title textAlign='center' lineHeight='10px'>Profile</Title>
+          <Header lineHeight='1.5rem' textAlign="center">My name is Tassneewan Noita. My nick name is Mild who love coding and ready to learn everything. </Header>
+          <Header lineHeight='1.5rem' textAlign="center">I'm studying 4th student of Bachelor of Science (Information Technology), School of Information Technology,</Header>
+          <Header lineHeight='1.5rem' textAlign="center">King Mongkut’s University of Technology Thonburi.</Header>
         </Grid>
         <Hr/>
         <Grid item md="12">

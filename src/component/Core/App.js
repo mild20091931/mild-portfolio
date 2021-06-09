@@ -13,15 +13,20 @@ const Background = styled(Grid)`
   z-index:0;
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 769px) {
+    height: ${props => props.widthMedia || '80vh'};
+    z-index:0;
+  }
   `
 
 function App() {
   return (
     <React.Fragment>
       <Nav/>
-      <Container maxWidth="xl" id="home" >
-        <Background container direction="row" justify="center" alignItems="center" >
-          <Home/>
+      <Container maxWidth="xl" id="home">
+        <Background widthMedia="40vh" container direction="row" justify="center" alignItems="center" >
+          <Home />
         </Background>
         <Bg />
       <Container maxWidth="xl" id="profile">
